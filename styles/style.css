@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --cor-primaria: #89A8B2;
+  --cor-secundaria: #E5E1DA;
+  --cor-terciaria: #E5E1DA;
+  --cor-hover: #B3C8CF;
+  --fonte-primaria: "Krona One", serif;
+  --fonte-secundaria: "Montserrat", serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  box-sizing: border-box;
+}
+.cabecalho{
+  padding: 2% 0% 0% 15%;
+}
+.cabecalho-nav{
+  display: flex;
+  gap: 80px;
+}
+.cabecalho-link {
+  font-family: "Montserrat", serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--cor-terciaria);
+  text-decoration: none;
+
+}
+main.apresentacao {
+  margin: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.apresentacao-filho {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+h1.apresentacao-titulo {
+  font-family: "Krona One", Serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--cor-secundaria);
+}
+
+p.apresentacao-texto {
+  color: var(--cor-secundaria);
+  font-family: "Montserrat", serif;
+  font-size: 24px;
+}
+strong.titulo-destaque {
+  color: var(--cor-terciaria);
+}
+
+div.apresentacao-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+h2.apresentacao-subtitulo{
+  font-family: "Krona One", serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+a.apresentacao-ancora{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 378px;
+  text-align: center;
+  color: var(--cor-secundaria);
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+}
+
+a.apresentacao-ancora:hover{
+ background-color: var(--cor-hover);
+  }
+
+.rodape{
+  background-color: var(--cor-terciaria);
+  font-family: "MontSerrat", serif ;
+  font-size: 24px;
+  padding: 24px ;
+  color: var(--cor-primaria);
+  text-align: center;
+}
