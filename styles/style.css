@@ -2,7 +2,7 @@
 :root {
   --cor-primaria: #89A8B2;
   --cor-secundaria: #E5E1DA;
-  --cor-terciaria: #E5E1DA;
+  --cor-terciaria: #F0F0D7;
   --cor-hover: #B3C8CF;
   --fonte-primaria: "Krona One", serif;
   --fonte-secundaria: "Montserrat", serif;
@@ -25,7 +25,7 @@ body {
 }
 .cabecalho-link {
   font-family: "Montserrat", serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--cor-terciaria);
   text-decoration: none;
@@ -33,12 +33,13 @@ body {
 }
 main.apresentacao {
   margin: 5% 15%;
+  gap: 82px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 section.apresentacao-filho {
-  width: 615px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -47,14 +48,14 @@ section.apresentacao-filho {
 h1.apresentacao-titulo {
   font-family: "Krona One", Serif;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: var(--cor-secundaria);
 }
 
 p.apresentacao-texto {
   color: var(--cor-secundaria);
   font-family: "Montserrat", serif;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 strong.titulo-destaque {
   color: var(--cor-terciaria);
@@ -70,18 +71,18 @@ div.apresentacao-links {
 h2.apresentacao-subtitulo{
   font-family: "Krona One", serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 a.apresentacao-ancora{
   display: flex;
   justify-content: center;
   gap: 16px;
-  width: 378px;
+  width: 50%;
   text-align: center;
   color: var(--cor-secundaria);
   border: 2px solid var(--cor-terciaria);
   border-radius: 8px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 21.5px 0;
   text-decoration: none;
@@ -91,12 +92,31 @@ a.apresentacao-ancora{
 a.apresentacao-ancora:hover{
  background-color: var(--cor-hover);
   }
-
+.apresentacao-imagem{
+  width: 50%;
+}
 .rodape{
   background-color: var(--cor-terciaria);
   font-family: "MontSerrat", serif ;
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 24px ;
   color: var(--cor-primaria);
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .cabecalho{
+    padding: 10%;
+  }
+  .cabecalho-nav{
+    justify-content: center;
+  }
+
+  .apresentacao{
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+  section.apresentacao-filho {
+    width: auto; 
+  } 
+
+  }
